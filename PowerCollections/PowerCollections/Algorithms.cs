@@ -36,7 +36,7 @@ namespace Wintellect.PowerCollections
     /// ICollection&lt;T&gt; and IList&lt;T&gt;.
     /// </summary>
     public static class Algorithms
-    {
+    
         #region Collection wrappers
 
         /// <summary>
