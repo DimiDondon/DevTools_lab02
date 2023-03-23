@@ -8,7 +8,7 @@ namespace Wintellect.PowerCollections
         public int Count { get; private set; }
         public int Capacity { get; }
         T[] n;
-        public Stack(int nsize = 5)
+        public Stack(int nsize = 100)
         {
             if (nsize < 0) throw new InvalidOperationException("Емкость стека не должна быть отрицательной");
             Capacity = nsize;

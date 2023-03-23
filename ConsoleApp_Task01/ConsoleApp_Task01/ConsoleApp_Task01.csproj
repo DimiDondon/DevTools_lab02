@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MihailovDmitriy.Powercollections" Version="0.0.2-beta" />
+  </ItemGroup>
+
 </Project>
