@@ -1,0 +1,20 @@
+name: Task03 Test Project
+on: push
+jobs:
+  Task03_TestProject:
+    runs-on: windows-latest 
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Install .NET Core
+      uses: actions/setup-dotnet@v3.0.3
+      with:
+        dotnet-version: 6.0.x
+    - name: Build Project
+      run: dotnet build
+      working-directory: PowerCollections
+    - name: Test Project
+      run: dotnet test
+      working-directory: PowerCollections
