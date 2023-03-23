@@ -22,8 +22,8 @@ jobs:
       run: dotnet pack
       working-directory: PowerCollections    
     - name: Publish Package
-      run: dotnet nuget push "\bin\Debug\*.nupkg" -k ${{ secrets.GITHUB_TOKEN }} -s https://nuget.pkg.github.com/DimiDondon/index.json --skip-duplicate
-      working-directory: PowerCollections\PowerCollections    
+      run: dotnet nuget push "PowerCollections\bin\Debug\*.nupkg" -k ${{ secrets.GITHUB_TOKEN }} -s https://nuget.pkg.github.com/DimiDondon/index.json --skip-duplicate
+      working-directory: PowerCollections
     - name: Get XML
       id: getxml
       uses: mavrosxristoforos/get-xml-info@1.1.1
