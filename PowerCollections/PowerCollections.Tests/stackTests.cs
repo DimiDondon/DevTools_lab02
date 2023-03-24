@@ -55,10 +55,10 @@ namespace Wintellect.PowerCollections.Tests
             CollectionAssert.AreEqual(res.ToArray(), nums.Reverse().ToArray());
         }
         [TestMethod]
-        public void constructor_без_параметров_должен_равняться_пяти() //Тестирование конструктора без параметров
+        public void constructor_без_параметров_должен_равняться_сотне() //Тестирование конструктора без параметров
         {
             Stack<int> stack = new Stack<int>();
-            Assert.AreEqual(5, stack.Capacity);
+            Assert.AreEqual(100, stack.Capacity);
         }
 
         [TestMethod]
